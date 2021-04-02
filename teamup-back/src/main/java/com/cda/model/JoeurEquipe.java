@@ -1,28 +1,29 @@
 package com.cda.model;
 
-import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-@Builder
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-@Entity
-public class Role {
+public class JoeurEquipe {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int idRole;
-	private String role;
+	private int idJoueurEquipe;
+	
+	private int nbBut;
+	private String meilleurJoueur;
+	private String pireJoueur;
 	
 	@OneToMany
-	@JoinColumn(name ="idJoueur")
+	@JoinColumn(name = "id_joueur")
 	private Joueur joueur;
+	
+	@OneToMany
+	@JoinColumn(name = "id_equipe")
+	private Equipe equipe;
+	
+	
+
 }
