@@ -9,8 +9,8 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-
-public class RoleDto {
-	private int idRole;
-	private String role;
+public class LieuDto {
+	private int idLieu;
+	private String ville;
+	private String nomTerrain;
 }

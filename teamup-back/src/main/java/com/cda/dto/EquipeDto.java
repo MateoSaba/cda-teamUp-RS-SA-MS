@@ -9,8 +9,10 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+public class EquipeDto {
 
-public class RoleDto {
-	private int idRole;
-	private String role;
+	private int idEquipe;
+	private String couleur;
+	private int nbJoueur;
+	private RencontreDto Rencontre;
 }

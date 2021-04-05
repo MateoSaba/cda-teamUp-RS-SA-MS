@@ -1,5 +1,7 @@
 package com.cda.dto;
 
+import com.cda.model.Lieu;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -9,8 +11,10 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-
-public class RoleDto {
-	private int idRole;
-	private String role;
+public class RencontreDto {
+	private int idRencontre;
+	private String dateMatch;
+	private int score;
+	private String resultat;
+	private LieuDto lieu;
 }
