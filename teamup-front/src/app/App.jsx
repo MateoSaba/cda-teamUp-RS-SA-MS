@@ -1,13 +1,17 @@
-
+import Routes from './shared/routes/Routes.jsx';
 import './App.css';
-
-import LoginForm from './components/header-footer/LoginForm';
+import { BrowserRouter as Router} from 'react-router-dom';
+import NavBar from './components/header-footer/NavBar';
 
 
 function App() {
   return (
-    
-<LoginForm/>
+    <>
+    <Router>
+      <NavBar />
+      <Routes />
+    </Router>
+  </>
     );
 }
 

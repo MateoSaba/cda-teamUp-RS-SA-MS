@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-BoldItalic.ttf") format("ttf"),
+       
+   }
+
+h1{
+    font-family: "Open Sans";
+    color: white;
+    padding-top: 20vh;
+    font-weight: lighter;
+}
