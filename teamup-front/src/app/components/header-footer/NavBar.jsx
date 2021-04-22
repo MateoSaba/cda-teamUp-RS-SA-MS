@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../../assets/css/NavBar.css'
 
 import { NavLink } from 'react-router-dom';
-import {URL_HISTORIQUE, URL_STATISTIQUE, URL_PROFIL,URL_PARTICIPER  } from '../../shared/constants/URL_CONST.js';
+import {URL_HISTORIQUE, URL_STATISTIQUE, URL_PROFIL,URL_PARTICIPER,URL_LISTE,URL_CREER,URL_AJOUTER } from '../../shared/constants/URL_CONST.js';
 import '../../assets/js/navbar.js'
 class NavBar extends Component {
 
@@ -74,16 +74,17 @@ class NavBar extends Component {
     <li className="menu-admin">
     <NavLink to={URL_PARTICIPER} className="nav-link " activeClassName="font-weight-bold">  <i class="fa fa-futbol" aria-hidden="true"></i> Participer</NavLink>
     </li>
+    <li className="menu-admin">
+    <NavLink to={URL_LISTE} className="nav-link " activeClassName="font-weight-bold">  <i class="fa fa-users" aria-hidden="true"></i> Les joueurs</NavLink>
+    </li>
     <li class="header">ADMIN</li>
     <li>
-      <a href="lol">
-        <i class="fa fa-users" aria-hidden="true"></i> Creer un match
-      </a>
+      <NavLink to={URL_CREER} className="nav-link " activeClassName="font-weight-bold">  <i class="fa fa-users" aria-hidden="true"></i>Creer un match</NavLink>
     </li>
     <li>
-      <a href="lol">
-        <i class="fa fa-cog" aria-hidden="true"></i> Ajouter un user
-      </a>
+  
+      <NavLink to={URL_AJOUTER} className="nav-link " activeClassName="font-weight-bold">   <i class="fa fa-cog" aria-hidden="true"></i> Ajouter un user</NavLink>
+
     </li>
   
   </ul>

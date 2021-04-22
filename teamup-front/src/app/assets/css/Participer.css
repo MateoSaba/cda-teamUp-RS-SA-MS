@@ -72,9 +72,7 @@
     color: rgb(0, 0, 0);
   }
   
-  .todo-input::placeholder {
-    color: #000000;
-  }
+
   
   .todo-button {
     padding: 16px;

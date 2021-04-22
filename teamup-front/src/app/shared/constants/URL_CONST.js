@@ -8,3 +8,8 @@ export const URL_STATISTIQUE = '/statistique'
 
 export const URL_PARTICIPER ='/participer'
 
+export const URL_AJOUTER ='/ajouterjoueur'
+
+export const URL_CREER='/creermatch'
+
+export const URL_LISTE ='/listejoueur'
