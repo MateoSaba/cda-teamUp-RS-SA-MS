@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router';
 import {createBrowserHistory} from 'history';
-import {URL_HOMECONNEXION, URL_HISTORIQUE, URL_STATISTIQUE, URL_PROFIL } from '../constants/URL_CONST.js';
+import {URL_HOMECONNEXION, URL_HISTORIQUE, URL_STATISTIQUE, URL_PROFIL,URL_PARTICIPER } from '../constants/URL_CONST.js';
 import HomeConnexion from '../../views/HomeConnexion.jsx';
 import Historique from '../../views/Historique.jsx';
 import Statistique from '../../views/Statistique.jsx';
 import Profil from '../../views/Profil.jsx';
+import Participer from '../../views/Participer.jsx';
 
 const CustomHistory = createBrowserHistory()
 
@@ -18,6 +19,7 @@ class Routes extends Component {
                         <Route exact path={URL_HISTORIQUE} component={Historique}></Route>
                         <Route path={URL_STATISTIQUE} component={Statistique}></Route>
                         <Route path={URL_PROFIL} component={Profil}></Route>
+                        <Route path={URL_PARTICIPER} component={Participer}></Route>
                     </Switch>
             </>
         );
