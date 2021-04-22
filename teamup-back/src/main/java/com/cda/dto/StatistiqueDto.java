@@ -17,4 +17,5 @@ public class StatistiqueDto {
 	private int nbVictoire;
 	private int nbDefaite;
 	private int nbMatchNul;
+	private int idJoueur;
 }
