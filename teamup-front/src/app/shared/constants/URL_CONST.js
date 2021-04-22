@@ -6,3 +6,5 @@ export const URL_HISTORIQUE = '/historique'
 
 export const URL_STATISTIQUE = '/statistique'
 
+export const URL_PARTICIPER ='/participer'
+

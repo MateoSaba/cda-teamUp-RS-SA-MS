@@ -4,101 +4,147 @@
        
    }
 
-.sidebar-container {
-    position: fixed;
-    width: 220px;
-    height: 100%;
-    left: 0;
-    overflow-x: hidden;
-    overflow-y: auto;
-    background: #ffffff;
-    color: black;
-  }
+
+
+.sidebar-navigation {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  position: relative;
+}
+
+.sidebar-navigation li {
+  background-color: transparent;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  line-height: 20px;
+  padding-top:10px;
+  padding-bottom:10px
+}
+
+.sidebar-navigation li a {
+  padding: 10px 15px 10px 30px;
+  display: block;
+  color: black;
+  font-family: "Open Sans";
+}
+
+.sidebar-navigation li .fa {
+  margin-right: 10px;
+}
+
+.sidebar-navigation li a:active,
+.sidebar-navigation li a:hover,
+.sidebar-navigation li:hover a,
+.sidebar-navigation li a:focus {
+  text-decoration: none;
+  outline: none;
+  color: white;
+  font-family: "Open Sans";
+
   
-  .content-container {
-    padding-top: 20px;
+}
+
+.sidebar-navigation li::before {
+  background-color: #6CACCD;
+  position: absolute;
+  content: '';
+  height: 100%;
+  left: 0;
+  top: 0;
+  -webkit-transition: width 0.2s ease-in;
+  transition: width 0.2s ease-in;
+  width: 3px;
+  z-index: -1;
+}
+
+.sidebar-navigation li:hover::before {
+  width: 100%;
+}
+
+.sidebar-navigation .header {
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  padding: 10px 15px 10px 30px;
+}
+
+.sidebar-navigation .header::before {
+  background-color: transparent;
+}
+
+.sidebar-logo {
+  padding: 10px 15px 10px 30px;
+  font-size: 20px;
+  background-color: #ffffff;
+  margin-bottom:20px;
+  font-family: "Open Sans";
+}
+
+.vertical-nav {
+  min-width: 17rem;
+  width: 17rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+}
+
+.page-content {
+  width: calc(100% - 17rem);
+  margin-left: 17rem;
+  transition: all 0.4s;
+}
+
+/* for toggle behavior */
+
+#sidebar.active {
+  margin-left: -17rem;
+}
+
+#content.active {
+  width: 100%;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -17rem;
   }
-  
-  .sidebar-logo {
-    padding: 10px 15px 10px 30px;
-    font-size: 20px;
-    background-color: #ffffff;
-    margin-bottom:20px;
-    font-family: "Open Sans";
+  #sidebar.active {
+    margin-left: 0;
   }
-  
-  .sidebar-navigation {
-    padding: 0;
+  #content {
+    width: 100%;
     margin: 0;
-    list-style-type: none;
-    position: relative;
   }
-  
-  .sidebar-navigation li {
-    background-color: transparent;
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    line-height: 20px;
-    padding-top:10px;
-    padding-bottom:10px
+  #content.active {
+    margin-left: 17rem;
+    width: calc(100% - 17rem);
   }
-  
-  .sidebar-navigation li a {
-    padding: 10px 15px 10px 30px;
-    display: block;
-    color: black;
-    font-family: "Open Sans";
-  }
-  
-  .sidebar-navigation li .fa {
-    margin-right: 10px;
-  }
-  
-  .sidebar-navigation li a:active,
-  .sidebar-navigation li a:hover,
-  .sidebar-navigation li:hover a,
-  .sidebar-navigation li a:focus {
-    text-decoration: none;
-    outline: none;
-    color: white;
-    font-family: "Open Sans";
+}
 
-    
-  }
-  
-  .sidebar-navigation li::before {
-    background-color: #018a13;
-    position: absolute;
-    content: '';
-    height: 100%;
-    left: 0;
-    top: 0;
-    -webkit-transition: width 0.2s ease-in;
-    transition: width 0.2s ease-in;
-    width: 3px;
-    z-index: -1;
-  }
-  
-  .sidebar-navigation li:hover::before {
-    width: 100%;
-  }
-  
-  .sidebar-navigation .header {
-    font-size: 12px;
-    text-transform: uppercase;
-    background-color: #ffffff;
-    padding: 10px 15px 10px 30px;
-  }
-  
-  .sidebar-navigation .header::before {
-    background-color: transparent;
-  }
-  
-  .content-container {
-    padding-left: 220px;
-  }
 
-  .menu-admin{
-      margin-bottom:100px
-  }
+body {
+  background: #599fd9;
+  background: -webkit-linear-gradient(to right, #599fd9, #c2e59c);
+  background: linear-gradient(to right, #599fd9, #c2e59c);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.separator {
+  margin: 3rem 0;
+  border-bottom: 1px dashed #fff;
+}
+
+.text-uppercase {
+  letter-spacing: 0.1em;
+}
+
+.text-gray {
+  color: #aaa;
+}

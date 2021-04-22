@@ -1,9 +1,4 @@
-
-body {
-  background: #018a13;
-  background: -webkit-linear-gradient(to right, #018a13, #018a13);
-  background: linear-gradient(to right, #018a13, #018a13);
-  min-height: 100vh;
-  overflow-x: hidden;
+body{
+  margin: 0!important;
+  padding: 0;
 }
-

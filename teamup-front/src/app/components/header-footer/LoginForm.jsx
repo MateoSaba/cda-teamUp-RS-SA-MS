@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../assets/css/LoginFormCss.css'
+import '../../assets/css/LoginFormCss.css';
 
 class LoginForm extends Component {
     render() {
