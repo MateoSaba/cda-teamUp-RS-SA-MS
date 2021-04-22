@@ -19,7 +19,7 @@ import lombok.NoArgsConstructor;
 public class Role {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int idRole;
+	private int id;
 	private String role;
 	
 	@OneToMany

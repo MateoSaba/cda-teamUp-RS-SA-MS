@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class JoueurDto {
-	private int idJoueur;
+	private int id;
 	private String nom;
 	private String prenom;
 	private String postePrefere;

@@ -18,7 +18,7 @@ import lombok.NoArgsConstructor;
 @Entity
 public class Rencontre {
 	@Id
-	private int idRencontre;
+	private int id;
 	
 	@Column(name = "date_match", nullable = false)
 	private String dateMatch;

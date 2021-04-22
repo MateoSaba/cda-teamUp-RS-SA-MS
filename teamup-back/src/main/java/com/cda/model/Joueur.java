@@ -26,14 +26,14 @@ public class Joueur {
 	private String postePrefere;
 
 	@OneToOne
-	@JoinColumn(name ="id_role")
+	@JoinColumn(name ="idRole")
 	private Role role;
 	
 	@OneToOne
-	@JoinColumn(name ="id_statistiques")
+	@JoinColumn(name ="idStatistiques")
 	private Statistique statisitque;
 	
 	@ManyToMany
-	@JoinColumn(name ="id_equipe")
+	@JoinColumn(name ="equipe")
 	private Equipe equipe;
 }

@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class StatistiqueDto {
-	private int idStatistique;
+	private int id;
 	private int nbButTotal;
 	private int nbTitreMeilleurJoeur;
 	private int nbTitrePireJoueur;

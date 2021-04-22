@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class LieuDto {
-	private int idLieu;
+	private int id;
 	private String ville;
 	private String nomTerrain;
 }

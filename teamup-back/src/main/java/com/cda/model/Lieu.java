@@ -18,7 +18,7 @@ import lombok.NoArgsConstructor;
 @Entity
 public class Lieu {
 	@Id
-	private int idLieu;
+	private int id;
 	
 	@Column(name = "ville", nullable = false)
 	private String ville;
