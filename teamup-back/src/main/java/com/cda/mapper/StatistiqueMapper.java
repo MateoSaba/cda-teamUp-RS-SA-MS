@@ -9,10 +9,10 @@ import com.cda.model.Statistique;
 @Mapper(componentModel = "spring")
 public interface StatistiqueMapper {
 
-	@Mapping(source="joueur.idJoueur", target = "joueurId")
+	@Mapping(source="joueur.idJoueur", target = "idJoueur")
 	StatistiqueDto StatistiqueToStatistiqueDto(Statistique statistique);
 	
-	@Mapping(source="joueurId", target = "joueur.idJoueur")
-	Statistique StatistiqueDtoToStatistique(Statistique statistique);
+	@Mapping(source="idJoueur", target = "joueur.idJoueur")
+	Statistique StatistiqueDtoToStatistique(StatistiqueDto statistiqueDto);
 	
 }
