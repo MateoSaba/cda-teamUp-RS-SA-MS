@@ -1,0 +1,43 @@
+#upload {
+    opacity: 0;
+}
+ 
+
+#formContent{
+    margin-top: -30px;
+}
+#upload-label {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+}
+
+.tests{
+font-weight:bold;
+text-transform:uppercase;
+color: #6c757d;
+}
+
+.formulaire{
+    width: 84%;
+    display: block;
+    margin: auto;
+    background:#F0F0F0;
+}
+
+.second{
+    margin-bottom: 20px!important;
+}
+
+.image{
+    margin-left:35px!important;
+    margin-right: 35px!important;
+
+}
+
+.boutonimage{
+    background:rgb(233, 233, 233);
+    width: 100%;
+    
+}

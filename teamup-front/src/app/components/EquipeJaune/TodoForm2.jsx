@@ -42,7 +42,7 @@ function TodoForm(props) {
       ) : (
         <>
           <input
-            placeholder='Entrez votre nom'
+            placeholder='Entrez un joueur'
             value={input}
             onChange={handleChange}
             name='text'
