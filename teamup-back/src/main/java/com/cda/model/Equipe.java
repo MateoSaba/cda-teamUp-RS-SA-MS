@@ -20,7 +20,7 @@ import lombok.NoArgsConstructor;
 public class Equipe {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int idEquipe;
+	private int id;
 	
 	private String couleur;
 	private int nbJoueur;
