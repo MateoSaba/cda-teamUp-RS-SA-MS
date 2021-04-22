@@ -8,10 +8,6 @@ import javax.persistence.ManyToOne;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-<<<<<<< HEAD
-=======
-
->>>>>>> fbd968b (modification structure + correction des id sur les entités)
 @Data
 @Entity
 @NoArgsConstructor

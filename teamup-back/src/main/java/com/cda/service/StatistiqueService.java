@@ -27,7 +27,7 @@ public class StatistiqueService {
 	@Transactional
 	public StatistiqueDto save(StatistiqueDto statistiqueDto) {
 		Statistique save = statistiqueRepository.save(statistiqueMapper.StatistiqueDtoToStatistique(statistiqueDto));
-		statistiqueDto.setIdStatistique(save.getIdStatistique());
+		statistiqueDto.setId(save.getId());
 		return statistiqueDto;
 	}
 	
