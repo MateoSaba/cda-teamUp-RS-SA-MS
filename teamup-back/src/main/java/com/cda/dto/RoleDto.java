@@ -13,4 +13,5 @@ import lombok.NoArgsConstructor;
 public class RoleDto {
 	private int id;
 	private String role;
+	private int idJoueur;
 }
