@@ -6,7 +6,7 @@ class Home extends Component {
     render() {
         return (
             <div className="container-fluid page-content test">
- <h1 className="text-center text-white">BIENVENUE SUR TEAM UP</h1>
+ <h1 className="text-center text-white titre-main">BIENVENUE SUR TEAM UP</h1>
                  <LoginForm/> 
 
             </div>
