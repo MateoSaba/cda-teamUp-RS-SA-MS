@@ -14,6 +14,6 @@ public class JoueurDto {
 	private String nom;
 	private String prenom;
 	private String postePrefere;
-	private RoleDto role;
-	private StatistiqueDto statistique;
+	private int idRole;
+	private int idStatistique;
 }

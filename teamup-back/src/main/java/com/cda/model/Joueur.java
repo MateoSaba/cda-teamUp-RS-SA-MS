@@ -30,7 +30,7 @@ public class Joueur {
 	private Role role;
 	
 	@OneToOne
-	@JoinColumn(name ="idStatistiques")
+	@JoinColumn(name ="idStatistique")
 	private Statistique statisitque;
 	
 	@ManyToMany
