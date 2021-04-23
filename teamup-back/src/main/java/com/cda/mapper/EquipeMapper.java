@@ -10,9 +10,11 @@ import com.cda.model.Equipe;
 public interface EquipeMapper {
 	
 	@Mapping(source="joueur.id", target = "idJoueur")
+	@Mapping(source="rencontre.id", target = "idRencontre")
 	EquipeDto EquipeToEquipeDto(Equipe equipe);
 	
 	@Mapping(source="idJoueur", target = "joueur.id")
+	@Mapping(source="idRencontre", target = "rencontre.id")
 	Equipe EquipeDtoToEquipe(EquipeDto equipeDto);
 
 }
