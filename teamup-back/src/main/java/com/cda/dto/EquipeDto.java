@@ -15,5 +15,5 @@ public class EquipeDto {
 	private String couleur;
 	private int nbJoueur;
 	private String joueur;
-	private String rencontre;
+	private int rencontre;
 }
