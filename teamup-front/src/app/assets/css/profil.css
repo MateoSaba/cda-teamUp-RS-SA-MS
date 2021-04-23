@@ -17,6 +17,7 @@
 font-weight:bold;
 text-transform:uppercase;
 color: #6c757d;
+font-family: 'Open Sans';
 }
 
 .formulaire{
@@ -24,10 +25,26 @@ color: #6c757d;
     display: block;
     margin: auto;
     background:#F0F0F0;
+    font-family: "Open Sans";
 }
 
 .second{
     margin-bottom: 20px!important;
+}
+
+.titre-profil{
+    margin-top:-110px!important;
+    margin-bottom: 60px!important;
+    color: white;
+    font-size: 50px;
+}
+
+.titre-info{
+    font-size: 30px;
+}
+
+.text-modif{
+    font-family: 'Open Sans';
 }
 
 .image{

@@ -8,3 +8,9 @@ h1{
     font-family: "Open Sans";
     font-weight: lighter;
 }
+
+.titre-main{
+margin-top:-35px;
+margin-bottom: 40px;
+font-size: 60px;
+}

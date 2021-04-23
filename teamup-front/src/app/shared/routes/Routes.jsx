@@ -9,7 +9,7 @@ import Profil from '../../views/Profil.jsx';
 import Participer from '../../views/Participer.jsx';
 import AjouterJoueur from '../../views/AjouterJoueur.jsx'
 import CreerMatch from '../../views/CreerMatch.jsx'
-import ListeJoueur from '../../views/AjouterJoueur.jsx'
+import ListeJoueur from '../../views/ListeJoueur.jsx'
 
 const CustomHistory = createBrowserHistory()
 
