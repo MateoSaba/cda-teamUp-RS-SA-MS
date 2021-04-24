@@ -7,6 +7,7 @@ class Historique extends Component {
     render() {
         return (
            
+		   
 <div class="limiter page-content">
 <h1 className="titre-histo">Mes matchs</h1>
 
