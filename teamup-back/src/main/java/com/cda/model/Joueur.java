@@ -23,7 +23,11 @@ public class Joueur {
 	private int id;
 	private String nom;
 	private String prenom;
+	private String pseudo;
 	private String postePrefere;
+	private String email;
+	private String password;
+	
 
 	@OneToOne
 	@JoinColumn(name ="idRole")
