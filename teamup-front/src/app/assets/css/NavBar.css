@@ -47,7 +47,7 @@
 }
 
 .sidebar-navigation li::before {
-  background-color: #6BABCE;
+  background-color: #092254;
   position: absolute;
   content: '';
   height: 100%;
@@ -130,8 +130,8 @@
 
 body {
   background: #599fd9;
-  background: -webkit-linear-gradient(to right, #599fd9, #c2e59c);
-  background: linear-gradient(to right, #599fd9, #c2e59c);
+  background: -webkit-linear-gradient(to right, #04113B, #1D69C1);
+  background: linear-gradient(to right, #04113B, #1D69C1);
   min-height: 100vh;
   overflow-x: hidden;
 }
