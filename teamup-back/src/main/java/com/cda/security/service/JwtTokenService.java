@@ -12,9 +12,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.authority.AuthorityUtils;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Service;
-
-import com.cda.model.Joueur;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
@@ -30,12 +29,12 @@ public class JwtTokenService implements IJwtTokenRepository {
 	
 	@Override
 	public String createTokens(Authentication authentication) {
-		Joueur joueur = (Joueur) authentication.getPrincipal();
+		User user = (User) authentication.getPrincipal();
 		Claims claims = new DefaultClaims();
 		
-		claims.setSubject(String.valueOf(joueur.getPseudo()));
-        claims.put("pseudo", joueur.getPseudo());
-        claims.put("roles", String.join(",", AuthorityUtils.authorityListToSet(joueur.getAuthorities())));
+		claims.setSubject(String.valueOf(user.getUsername()));
+        claims.put("pseudo", user.getUsername());
+        claims.put("roles", String.join(",", AuthorityUtils.authorityListToSet(user.getAuthorities())));
         
         return Jwts.builder()
     	        .signWith(SignatureAlgorithm.HS512, jwtCle.getBytes())
