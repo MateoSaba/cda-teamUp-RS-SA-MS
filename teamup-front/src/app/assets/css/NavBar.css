@@ -133,7 +133,6 @@ body {
   background: -webkit-linear-gradient(to right, #04113B, #1D69C1);
   background: linear-gradient(to right, #04113B, #1D69C1);
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
 .separator {

@@ -19,7 +19,7 @@ class Statistique extends Component {
           </div>
 
           <div className="wrapper col-md-4">
-            <h1 className="titre-profil">Mes stats</h1>
+            <h1 className="titre-profil ">Mes stats</h1>
             <div id="formContent" className="hauteur">
               <h1  className="mtop">Victoire</h1> <br />
               <h1>10</h1>
